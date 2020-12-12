@@ -93,7 +93,6 @@ public class Step3 {
             MovingCube.leftRotate(3,9,cube);
         }
     }
-
     public static Integer compare(String[][] arr) {
         String[][] origin = {
                 {" "," "," ", "B", "B", "B1"},

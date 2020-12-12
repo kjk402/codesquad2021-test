@@ -43,7 +43,6 @@ public class MovingCube {
         return arr;
     }
     public static String[][] down(Integer num1, Integer num2, String[][] arr) {
-        //5 9
         String temp1 = arr[6][num1];
         String temp2 = arr[7][num1];
         String temp3 = arr[8][num1];
