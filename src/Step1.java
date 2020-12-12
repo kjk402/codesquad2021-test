@@ -28,35 +28,41 @@ public class Step1 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("> ");
-        String command = sc.nextLine();
-        sc.close();
-        String word = command.split(" ")[0];
-        String num = command.split(" ")[1];
-        String direc = command.split(" ")[2];
-        int count = Integer.parseInt(num);
 
-        String[] arr = word.split("");
-        if (direc.equals("l") || direc.equals("L")) {
-            if (count >0){
-                left(count, arr, word);
+        while (true) {
+            System.out.print("> ");
+            String command = sc.nextLine();
+            if (command.equals("q") || command.equals("Q")) {
+                sc.close();
+                return;
             }
-            if (count <0) {
-                right(count, arr, word);
-            }
-        }
-        if (direc.equals("r") || direc.equals("R")) {
-            if (count >0) {
-                right(count, arr, word);
-            }
-            if (count <0) {
-                left(count, arr, word);
-            }
-        }
+            String word = command.split(" ")[0];
+            String num = command.split(" ")[1];
+            String direc = command.split(" ")[2];
+            int count = Integer.parseInt(num);
 
-        for (int j =0; j<word.length(); j++) {
-            System.out.print(arr[j]);
-        }
+            String[] arr = word.split("");
+            if (direc.equals("l") || direc.equals("L")) {
+                if (count >0){
+                    left(count, arr, word);
+                }
+                if (count <0) {
+                    right(count, arr, word);
+                }
+            }
+            if (direc.equals("r") || direc.equals("R")) {
+                if (count >0) {
+                    right(count, arr, word);
+                }
+                if (count <0) {
+                    left(count, arr, word);
+                }
+            }
 
+            for (int j =0; j<word.length(); j++) {
+                System.out.print(arr[j]);
+            }
+            System.out.println("");
+        }
     }
 }
