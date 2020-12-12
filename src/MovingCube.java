@@ -129,7 +129,6 @@ public class MovingCube {
                 arr[num2+i][num1+j]=B[i][j];
             }
         }
-        System.out.println();
         return arr;
     }
     public static String[][] leftRotate(Integer num1, Integer num2,String[][] arr) {
