@@ -48,7 +48,6 @@ public class Step2 {
                 {"G", "C", "W"},
                 {"G", "B", "B"}
         };
-
         printing(cube);
         while (true) {
             Scanner sc = new Scanner(System.in);
