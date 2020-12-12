@@ -17,7 +17,6 @@ public class Step2 {
         arr[num][0] = temp;
         return arr;
     }
-
     private static String[][] up(Integer num, String[][] arr) {
         String temp = arr[0][num];
         for (int i=1; i<3; i++) {
@@ -26,7 +25,6 @@ public class Step2 {
         arr[2][num] = temp;
         return arr;
     }
-
     private static String[][] down(Integer num, String[][] arr) {
         String temp = arr[2][num];
         for (int i=2; i>0; i--) {
@@ -35,7 +33,6 @@ public class Step2 {
         arr[0][num] = temp;
         return arr;
     }
-
     private static void printing(String[][] arr) {
         for (String[] i : arr) {
             for (String j : i) {
@@ -45,7 +42,6 @@ public class Step2 {
         }
         System.out.println();
     }
-
     public static void main(String[] args) {
         String[][] cube = {
                 {"R", "R", "W"},
@@ -59,6 +55,7 @@ public class Step2 {
             System.out.print("CUBE> ");
             String command = sc.nextLine();
             if (command.equals("Q")) {
+                sc.close();
                 System.out.println("Bye~");
                 return;
             }
