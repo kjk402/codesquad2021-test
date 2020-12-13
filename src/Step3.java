@@ -155,6 +155,7 @@ public class Step3 {
                 System.out.println("경과시간: "+min +":"+sec);
                 System.out.println("조작 갯수: "+finalcount);
                 System.out.println("이용해주셔서 감사합니다. 뚜뚜뚜.");
+                sc.close();
                 return;
             }
             if (command.equals("random")) {
@@ -179,6 +180,7 @@ public class Step3 {
                     }
                     System.out.println("경과시간: "+min +":"+sec);
                     System.out.println("모든 면을 맞추셨습니다. 축하드립니다.!!");
+                    sc.close();
                     return;
                 }
             }
