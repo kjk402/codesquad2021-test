@@ -165,7 +165,6 @@ public class Step3 {
             for (int k = 0; k<shell.length; k++) {
                 commandExcution(shell,k,cube);
 
-
                 System.out.println(shell[k]);
                 finalcount ++;
                 printing(cube);

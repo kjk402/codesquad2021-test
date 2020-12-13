@@ -116,7 +116,6 @@ public class MovingCube {
         arr[5][num2] = temp4;
         return arr;
     }
-
     public static String[][] rightRotate(Integer num1, Integer num2,String[][] arr) {
         String[][] B = new String[3][3];
         for(int i=0; i<3; i++){
