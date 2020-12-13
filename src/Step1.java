@@ -34,6 +34,7 @@ public class Step1 {
             String command = sc.nextLine();
             if (command.equals("q") || command.equals("Q")) {
                 sc.close();
+                System.out.println("Bye~");
                 return;
             }
             String word = command.split(" ")[0];
