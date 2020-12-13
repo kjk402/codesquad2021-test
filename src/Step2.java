@@ -89,7 +89,6 @@ public class Step2 {
                 if (shell[k].equals("L'")) {
                     up(0,cube);
                 }
-
                 if (shell[k].equals("'")){
                     continue;
                 }
@@ -98,8 +97,6 @@ public class Step2 {
                 }
                 printing(cube);
             }
-
         }
-
     }
 }

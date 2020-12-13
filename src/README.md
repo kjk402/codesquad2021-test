@@ -41,7 +41,7 @@ G B B
 2 동작 메소드
 
  -> 2차원 큐브의 움직임은 4가지로 나뉩니다. 왼쪽or오른쪽으로 밀기, 위or아래로 밀기.
-    각각 메소드를 left right up down으로 생성하였습니다.
+    각각 메소드를 left/right, up/down으로 생성하였습니다.
     명령어 별로 새로운 메소드를 만들지 않고 미는 위치만 다르고 같은 동작을 하는 명령은 동일 메소드를 사용할 수 있게 하였습니다.
     
     private static String[][] left(Integer num, String[][] arr) {
